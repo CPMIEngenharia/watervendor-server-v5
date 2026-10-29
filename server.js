@@ -31,7 +31,7 @@ if (!SPREADSHEET_ID || !SERVER_URL) {
 const serviceAccountAuth = new JWT({
     email: process.env.GOOGLE_SERVICE_EMAIL,
     key: process.env.GOOGLE_PRIVATE_KEY ? process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n') : '',
-    scopes: ['https://www.googleapis.com/auth/sheets'],
+    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
 // ==================================================================
